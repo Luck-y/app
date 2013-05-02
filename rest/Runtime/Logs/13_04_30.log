@@ -1,0 +1,38 @@
+[ 2013-04-30T23:28:04+08:00 ] 127.0.0.1 /app/rest.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004891s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.029285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029485s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001002s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000924s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000773s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004089s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001982s ]
+
+[ 2013-04-30T23:56:22+08:00 ] 127.0.0.1 /app/rest.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003265s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.003274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003466s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001557s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001599s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001263s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006923s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001937s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002112s ]
+
+[ 2013-04-30T23:58:59+08:00 ] ERR: (ThinkException) 非法操作:students
+[ 2013-04-30T23:59:21+08:00 ] ERR: (ThinkException) 非法操作:students
+[ 2013-04-30T23:59:43+08:00 ] ERR: (ThinkException) 非法操作:index
+[ 2013-04-30T23:59:58+08:00 ] ERR: (ThinkException) 无法加载模块:index
