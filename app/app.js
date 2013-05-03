@@ -1,8 +1,14 @@
 
 angular.module('app.service',['ngResource']).
     factory("Students",function($resource){
-        return  $resource('./rest.php/Info/students/:id',
-            {id: '@id'});
+        return  $resource('./rest.php/Info/students/:key/:value',
+            {key: '@key',value: '@id'},
+            {
+                delete: {method: "DELETE", params:{}},
+                add: {method: "POST"},
+                update: {method: "POST"}
+            }
+            );
 
     });
 

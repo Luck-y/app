@@ -1,23 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN" ng-app = "app">
 <head>
+    <meta charset="utf-8">
     <title>宿舍信息管理系统</title>
     <!--bootstrap css-->
-
-    <script type="text/javascript" src='lib/angular/angular.min.js'></script>
-    <script type="text/javascript" src='lib/angular/angular-resource.js'></script>
-    <script src="./lib/angular/ui/ui-bootstrap-tpls-0.2.0.min.js"></script>
     <link rel="stylesheet" href="./lib/angular/ui/assets/bootstrap.css"/>
-    <script src="app/controllers.js"></script>
-	<script type="text/javascript" src='app/app.js'></script>
-    <script type="text/javascript" src="lib/script.js"></script>
+    <script type="text/javascript" src='./lib/angular/angular.min.js'></script>
+    <script type="text/javascript" src='./lib/angular/angular-resource.js'></script>
+    <script type="text/javascript" src="./lib/angular/ui/ui-bootstrap-tpls-0.2.0.min.js"></script>
+    <script type="text/javascript" src="./app/controllers.js" charset="utf-8" ></script>
+	<script type="text/javascript" src='./app/app.js'></script>
+    <script type="text/javascript" src="./lib/script.js"></script>
     <script type="text/javascript">
         window.dorm = {};
         dorm.path = './app/';
         dorm.viewpath = dorm.path+'views/';
         $script([
-            './lib/angular/angular.min.js',
-            './lib/angular/ui/ui-bootstrap-tpls-0.2.0.min.js',
             './app/directives.js?' + Math.random(),
             './app/filters.js?' + Math.random(),
             './app/services.js?' + Math.random(),
@@ -46,7 +45,6 @@
                             当前用户选项
                             <b class="caret"></b>
                         </a>
-
                         <ul class="dropdown-menu">
                             <li><a href="#">参数设定</a></li>
                             <li><a href="#">用户信息</a></li>
@@ -68,31 +66,23 @@
     <div class="navbar-inner">
         <div class="container">
             <ul class="nav" ng-controller="DropdownCtrl">
-
                 <li><a href="#"><i class="icon-home"></i>首页</a></li>
+
 				<li class="dropdown"  ng-repeat="list in navbar">
 					 <a href="#" class="dropdown-toggle">
 							{{list.name}}
 							<b class="caret"></b>
 					 </a>
-					 <ul class="dropdown-menu">		
-							<li ng-repeat="item in list.items">						
+					 <ul class="dropdown-menu">
+							<li ng-repeat="item in list.items">
 							<a href={{item.url}}> {{item.name}} </a>
 							</li>
 					 </ul>
-				</li>	
+				</li>
 				<li><a href="#">系统设定</a></li>				
             </ul>
         </div>
     </div>
-</div>
-
-<div>
-    <form method='post' action='./rest.php/Info/Students/'>
-        <input type="text" name="id" >
-        <input type="text" name="name">
-        <input type="submit" value="submit">
-    </form>
 </div>
 
 <div class="main">
@@ -323,3 +313,4 @@
 </style>
 </body>
 </html>
+

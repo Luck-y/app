@@ -9,9 +9,8 @@
 
 class InfoAction extends Action
 {
-
-    function Students_get()
-    {
+    //READ
+    function Students_get() {
         $model = M('Students');
         if ($id = $this->_get('id')) {
             $data = $model->find($id);
@@ -28,39 +27,19 @@ class InfoAction extends Action
     }
 
     function Students_post(){
-        $json = new Services_JSON();
-        $postData = file_get_contents('php://input');
-        str_replace("&",',"',$postData);
-        str_replace("=",'":',$postData);
-        $data = $json->decode(stripslashes($postData), true);
         $model = M('Students');
-        if(isset($data['id'])){
-            $id = $data['id'];
+        if(isset($_POST['id'])){
+            $id = $_POST['id'];
         }
         else $id = NULL;
-
-        var_dump($postData);
-       /*
-       // $rs = $model->Field('id')->select();
-
-        //if($this->_get('id')){
         if($model->find($id)){
-            $this->Students_post_edit($data);
-
+            $this->Students_post_edit($_POST);
         }else{
-            $this->Students_post_add($data);
-
+            $this->Students_post_add($_POST);
         }
-        */
     }
-
     //CREATE
-    function Students_post_add($data)
-    {
-        /*$data = file_get_contents('php://input');
-          $data = json_decode(stripslashes($data), true); */
-       //$id = $data['id'];
-
+    function Students_post_add($data){
         $model = M('Students');
         if ($model->create($data)) {
             if ($id = $model->add()) {
@@ -73,12 +52,8 @@ class InfoAction extends Action
         }
     }
 
-    function Students_post_edit($data)
-    {
-        //$postData = file_get_contents('php://input');
-        //$data = json_decode(stripslashes($postData), true);
-
-
+    //UPDATE
+    function Students_post_edit($data){
         $model = M('Students');
         if ($model->create($data)) {
             if ($id = $model->save()) {
@@ -89,33 +64,21 @@ class InfoAction extends Action
         } else {
             $this->response($model->getError(), 'json', 500);
         }
-
     }
-
-    function Students_delete()
-    {
-        $postData = file_get_contents('php://input');
-        $data = json_decode(stripslashes($postData), true);
+    //DELETE
+    function Students_delete(){
         $model = M('Students');
-
-
-
-        if(isset($data['id'])){
-            $id = $data['id'];
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
         }
         else $id = NULL;
-        //$id = $this->_get('id');
-
-        $model = M('Students');
-        $data = $model->find($id);
-        if ($data) {
-            $model->where(array('id' => $id))->delete();
+        if ( $model->find($id)) {
+            $model->where(array('id' => "$id"))->delete();
             $this->response('Success', NULL, 202);
         } else {
             //NOT FOUND
             $this->response(NULL, NULL, 404);
         }
-
     }
 }
     ////////////////////////////////            students            ////////////////////////////////////

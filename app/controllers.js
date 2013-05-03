@@ -7,7 +7,7 @@
  */
 
 function DropdownCtrl($scope) {
-    $scope.test = "hello";
+
   $scope.navbar = [{
 	  name: "宿舍分配", 
 	  items: [
@@ -34,7 +34,7 @@ function DropdownCtrl($scope) {
 	  name: "学生信息",
 	  items: [
 			 {name:"学生管理", url: '#/Students'},
-			 {name:"学生管理", url: "#"},
+			 {name:"临时学生", url: "#"},
 			 {name:"权限分配", url: "#"}
 			]
 	  }];
@@ -69,7 +69,12 @@ function DormitoryOtherCtrl(){
 }
 
 function StudentManageCtrl($scope, Students){
+    //$scope.data = Students.query();
+    //var data = Students.get({key: 'id',value: "5090729022"});
+    //Students.delete({key: 'id',value: "5090729013"})
+    //$scope.item =data;
     $scope.data = Students.query();
+
 }
 
 function StudentTemporaryCtrl(){
