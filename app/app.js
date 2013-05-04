@@ -5,8 +5,8 @@ angular.module('app.service',['ngResource']).
             {key: '@key',value: '@id'},
             {
                 delete: {method: "DELETE", params:{}},
-                add: {method: "POST"},
-                update: {method: "POST"}
+               // add: {method: "POST"},
+                //update: {method: "POST"}
             }
             );
 
@@ -18,7 +18,9 @@ app.
         $routeProvider.
             when('/',{templateUrl:dorm.viewpath+'Status.html'}).
             when('/System/Property',{templateUrl:dorm.viewpath+'System/Property.html'}).
-            when('/Students',{controller: StudentManageCtrl, templateUrl: dorm.viewpath+'Student.html'}).
+            when('/StudentsManage',{controller: StudentManageCtrl, templateUrl: dorm.viewpath+'StudentManage.html'}).
+            when('/StudentsManage/Edit/:studentId',{controller: StudentManageEditCtrl, templateUrl: dorm.viewpath+'StudentManageEdit.html'}).
+            when('/StudentsManage/Add',{controller: StudentManageAddCtrl, templateUrl: dorm.viewpath+'StudentManageAdd.html'}).
             otherwise({redirectTo:'/'});
 
     });

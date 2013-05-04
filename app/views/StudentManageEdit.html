@@ -1,0 +1,81 @@
+<div class="span8 container">
+    <form method="POST" action="{{add()}}" name="form" class="form-horizontal css-form" novalidate>
+        <div class="row">
+            <div class="span4">
+                <div class="control-group">
+                    <label class="control-label" for="name">姓名</label>
+                    <div class="controls">
+                        <input name="name" type="text" id="name" value="{{student.name}}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="id">学号</label>
+                    <div class="controls">
+                        <input name="id" type="text" id="id" value="{{student.id}}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="class">班级</label>
+                    <div class="controls">
+                        <input name="class" type="text" id="class" value="{{student.class}}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="gender">性别</label>
+                    <div class="controls">
+                        <select name="gender" id="gender">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="type">学历</label>
+                    <div class="controls">
+                        <select name="type" id="type">
+                            <option value="研究生">研究生</option>
+                            <option value="本科生">本科生</option>
+                            <option value="临时">临时</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="control-group">
+                    <label class="control-label" for="admission">入学时间</label>
+                    <div class="controls">
+                        <input name="admission" type="text" id="admission" value="{{student.admission}}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="graduation">毕业时间</label>
+                    <div class="controls">
+                        <input name="graduation" type="text" id="graduation" value="{{student.graduation}}">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="status">状态</label>
+                    <div class="controls">
+                        <select name="status" id="status" >
+                            <option value="在校">在校</option>
+                            <option value="离校">离校</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="remark">备注</label>
+                    <div class="controls">
+                        <textarea name="remark"  id="remark" rows="4">{{student.remark}}</textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <!--<a href="#" class="btn btn-primary btn-small pull-right">Submit</a>-->
+            <input type="submit" value="Submit" class="btn btn-primary pull-right">
+            <span class="pull-right">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <a href="#" class="btn btn-danger btn-small pull-right">Reset</a>
+        </div>
+    </form>
+</div>

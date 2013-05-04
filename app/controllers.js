@@ -33,7 +33,7 @@ function DropdownCtrl($scope) {
 	  {
 	  name: "学生信息",
 	  items: [
-			 {name:"学生管理", url: '#/Students'},
+			 {name:"学生管理", url: '#/StudentsManage'},
 			 {name:"临时学生", url: "#"},
 			 {name:"权限分配", url: "#"}
 			]
@@ -75,8 +75,22 @@ function StudentManageCtrl($scope, Students){
     //$scope.item =data;
     $scope.data = Students.query();
 
-}
 
+}
+function StudentManageEditCtrl($scope, Students, $routeParams){
+    $scope.student = Students.get({key:'id', value: $routeParams.studentId});
+
+    //$scope.type = student.type;
+
+}
+function StudentManageAddCtrl($scope, Students, $location){
+    $scope.add= function(){
+        Students.save({},$scope.s);
+
+    }
+
+
+}
 function StudentTemporaryCtrl(){
 
 }
