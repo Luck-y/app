@@ -1,34 +1,39 @@
 <div class="container">
     <h6>学生信息</h6>
     <div class="span9">
-        <div class="row">
-            <div class="pull-right">
-                <a href="#StudentsManage/Add" class="btn btn-info">Add</a>
+        <p>
+            <div class="row">
+                <div class="pull-right">
+                    <a href="#StudentsManage/Add" class="btn btn-info">Create</a>
+                </div>
+                <div class="pull-right">
+                    <input class="search-query input-medium" type="text" placeholder="Search" ng-model="search">
+                </div>
             </div>
-            <div class="pull-right">
-                <input class="search-query input-medium" type="text" placeholder="Search" ng-model="search">
-            </div>
-        </div>
-        <hr/>
+        </p>
+
+
         <div>
             <table class="table table-hover table-striped">
                 <tr>
                     <th>姓名</th>
                     <th>学号</th>
                     <th>班级</th>
+                    <th>性别</th>
                     <th>操作</th>
                 </tr>
-                <tr  ng-repeat="item in data|filter: search|orderBy: id">
+                <tr ng-repeat="item in dataSet">
                     <td>{{item.name}}</td>
                     <td>{{item.id}}</td>
                     <td>{{item.class}}</td>
+                    <td>{{item.gender}}</td>
                     <td>
                         <a  href="#StudentsManage/Edit/{{item.id}}">
-                            <i class="icon-align-center icon-pencil"></i>
+                            <i class="icon-pencil"></i>
                         </a>&nbsp
-                        <a  href="#StudentsManage/Delete/{{item.id}}">
-                            <i class="icon-align-center icon-trash"></i>
-                        </a>
+                        <button  ng-click="delete(item.id)">
+                            <i class="icon-trash"></i>
+                        </button>
                     </td>
 
                 </tr>

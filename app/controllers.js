@@ -68,28 +68,61 @@ function DormitoryOtherCtrl(){
 
 }
 
-function StudentManageCtrl($scope, Students){
-    //$scope.data = Students.query();
-    //var data = Students.get({key: 'id',value: "5090729022"});
-    //Students.delete({key: 'id',value: "5090729013"})
-    //$scope.item =data;
-    $scope.data = Students.query();
+function StudentManageCtrl($scope, Students, $location){
+    $scope.dataSet = Students.query();
 
-
+    $scope.delete = function(arg){
+       // var student = Students.get({id: arg});
+        Students.delete({id: arg}, function(){
+            $location.path('/StudentsManage');
+        });
+    }
 }
-function StudentManageEditCtrl($scope, Students, $routeParams){
-    $scope.student = Students.get({key:'id', value: $routeParams.studentId});
-
-    //$scope.type = student.type;
+function StudentManageEditCtrl($scope, Students, $routeParams, $location){
+    $scope.path = $location.path();
+    /* why ????
+    var self = this;
+    $scope.data = Students.get({id: $routeParams.studentId},function(data){
+        self.original = data;
+    });
+    */
+    //var self = this;
+    Students.get({id: $routeParams.studentId}, function(data) {
+        self.original = data;
+        $scope.data = new Students(self.original);
+    });
+    $scope.test = self.original;
+    $scope.isClean = function(){
+        return angular.equals(self.original, $scope.data);
+    }
+    $scope.destroy = function() {
+        self.original.destroy(function() {
+            $location.path('/StudentsManage');
+        });
+    };
+    $scope.save = function() {
+        $scope.data.$save(function() {
+            $location.path('/StudentsManage');
+        });
+    };
+    $scope.reset = function(){
+//        $scope.data = self.original;             // why?????
+        $scope.data = new Students(self.original);
+    }
 
 }
 function StudentManageAddCtrl($scope, Students, $location){
-    $scope.add= function(){
-        Students.save({},$scope.s);
-
+    $scope.add = function(){
+        Students.save({},$scope.data, function(){
+            $location.path('/StudentsManage');
+        });
     }
-
-
+    $scope.reset = function(){
+        $scope.data.id='';
+        $scope.data.name="";
+        $scope.data.remark="";
+        $scope.data.class="";
+    }
 }
 function StudentTemporaryCtrl(){
 

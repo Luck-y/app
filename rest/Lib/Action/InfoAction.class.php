@@ -11,6 +11,7 @@ class InfoAction extends Action
 {
     //READ
     function Students_get() {
+
         $model = M('Students');
         if ($id = $this->_get('id')) {
             $data = $model->find($id);
@@ -24,19 +25,24 @@ class InfoAction extends Action
             $data = $model->select();
             $this->response($data);
         }
+
     }
 
     function Students_post(){
+        $info = file_get_contents('php://input');
+        $data = json_decode($info);
+
         $model = M('Students');
-        if(isset($_POST['id'])){
-            $id = $_POST['id'];
+        if(isset($data->id)){
+            $id =$data->id;
         }
         else $id = NULL;
         if($model->find($id)){
-            $this->Students_post_edit($_POST);
+            $this->Students_post_edit($data);
         }else{
-            $this->Students_post_add($_POST);
+            $this->Students_post_add($data);
         }
+
     }
     //CREATE
     function Students_post_add($data){

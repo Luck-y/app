@@ -1,29 +1,35 @@
 <div class="span8 container">
-    <form method="POST" action="{{add()}}" name="form" class="form-horizontal css-form" novalidate>
+    <form  name="myForm" class="form-horizontal css-form" >
         <div class="row">
             <div class="span4">
-                <div class="control-group">
+                <div class="control-group" ng-class="{error:myForm.name.$invalid}">
                     <label class="control-label" for="name">姓名</label>
                     <div class="controls">
-                        <input name="name" type="text" id="name" value="{{student.name}}">
+                        <input name="name" type="text" id="name" ng-model="data.name" required>
+                        <br/>
+                        <span ng-show="myForm.name.$error.required" class="help-inline">
+                        Required</span>
                     </div>
                 </div>
-                <div class="control-group">
+                <div class="control-group" ng-class="{error:myForm.id.$invalid}">
                     <label class="control-label" for="id">学号</label>
                     <div class="controls">
-                        <input name="id" type="text" id="id" value="{{student.id}}">
+                        <input name="id" type="text" id="id" ng-model="data.id" required>
+                        <br/>
+                        <span ng-show="myForm.id.$error.required" class="help-inline">
+                        Required</span>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="class">班级</label>
                     <div class="controls">
-                        <input name="class" type="text" id="class" value="{{student.class}}">
+                        <input name="class" type="text" id="class" ng-model="data.class">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="gender">性别</label>
                     <div class="controls">
-                        <select name="gender" id="gender">
+                        <select name="gender" id="gender" ng-model="data.gender">
                             <option value="男">男</option>
                             <option value="女">女</option>
                         </select>
@@ -32,9 +38,9 @@
                 <div class="control-group">
                     <label class="control-label" for="type">学历</label>
                     <div class="controls">
-                        <select name="type" id="type">
-                            <option value="研究生">研究生</option>
+                        <select name="type" id="type" ng-model="data.type">
                             <option value="本科生">本科生</option>
+                            <option value="研究生">研究生</option>
                             <option value="临时">临时</option>
                         </select>
                     </div>
@@ -44,19 +50,19 @@
                 <div class="control-group">
                     <label class="control-label" for="admission">入学时间</label>
                     <div class="controls">
-                        <input name="admission" type="text" id="admission" value="{{student.admission}}">
+                        <input name="admission" type="text" id="admission" ng-model="data.admission">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="graduation">毕业时间</label>
                     <div class="controls">
-                        <input name="graduation" type="text" id="graduation" value="{{student.graduation}}">
+                        <input name="graduation" type="text" id="graduation" ng-model="data.graduation">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="status">状态</label>
                     <div class="controls">
-                        <select name="status" id="status" >
+                        <select name="status" id="status" ng-model="data.status" >
                             <option value="在校">在校</option>
                             <option value="离校">离校</option>
                         </select>
@@ -65,17 +71,18 @@
                 <div class="control-group">
                     <label class="control-label" for="remark">备注</label>
                     <div class="controls">
-                        <textarea name="remark"  id="remark" rows="4">{{student.remark}}</textarea>
+                        <textarea name="remark"  id="remark" rows="4" ng-model="data.remark"></textarea>
                     </div>
                 </div>
 
             </div>
         </div>
         <div class="row">
-            <!--<a href="#" class="btn btn-primary btn-small pull-right">Submit</a>-->
-            <input type="submit" value="Submit" class="btn btn-primary pull-right">
-            <span class="pull-right">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-            <a href="#" class="btn btn-danger btn-small pull-right">Reset</a>
+            <button ng-click="save()" class="btn btn-primary pull-right" ng-disabled="isClean() || myForm.$invalid">Save</button>
+            <span class="pull-right">&nbsp&nbsp</span>
+            <button ng-click="reset()" class="btn btn-danger pull-right"> Reset</button>
+            <span class="pull-right">&nbsp&nbsp</span>
+            <a href="#/StudentsManage"class="btn pull-right">Cancel</a>
         </div>
     </form>
 </div>
