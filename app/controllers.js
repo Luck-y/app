@@ -79,7 +79,6 @@ function StudentManageCtrl($scope, Students, $location){
     }
 }
 function StudentManageEditCtrl($scope, Students, $routeParams, $location){
-    $scope.path = $location.path();
     /* why ????
     var self = this;
     $scope.data = Students.get({id: $routeParams.studentId},function(data){
@@ -91,15 +90,9 @@ function StudentManageEditCtrl($scope, Students, $routeParams, $location){
         self.original = data;
         $scope.data = new Students(self.original);
     });
-    $scope.test = self.original;
     $scope.isClean = function(){
         return angular.equals(self.original, $scope.data);
     }
-    $scope.destroy = function() {
-        self.original.destroy(function() {
-            $location.path('/StudentsManage');
-        });
-    };
     $scope.save = function() {
         $scope.data.$save(function() {
             $location.path('/StudentsManage');
@@ -112,16 +105,49 @@ function StudentManageEditCtrl($scope, Students, $routeParams, $location){
 
 }
 function StudentManageAddCtrl($scope, Students, $location){
-    $scope.add = function(){
+    original = {
+        id: '',
+        name: '',
+        remark: '',
+        class: '',
+        type: '本科生',
+        gender: '男',
+        admission: '0000-00-00',
+        graduation: '0000-00-00',
+        status: '在校'
+    }
+    $scope.data = original;
+
+    $scope.isClean = function(){
+        return angular.equals( $scope.data, {
+            id: '',
+            name: '',
+            remark: '',
+            class: '',
+            type: '本科生',
+            gender: '男',
+            admission: '0000-00-00',
+            graduation: '0000-00-00',
+            status: '在校'
+        });
+    }
+    $scope.save = function(){
         Students.save({},$scope.data, function(){
             $location.path('/StudentsManage');
         });
     }
     $scope.reset = function(){
-        $scope.data.id='';
-        $scope.data.name="";
-        $scope.data.remark="";
-        $scope.data.class="";
+       $scope.data = {
+           id: '',
+           name: '',
+           remark: '',
+           class: '',
+           type: '本科生',
+           gender: '男',
+           admission: '0000-00-00',
+           graduation: '0000-00-00',
+           status: '在校'
+       };
     }
 }
 function StudentTemporaryCtrl(){

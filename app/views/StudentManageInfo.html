@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="row">
-            <button ng-click="add()" class="btn btn-primary pull-right" ng-disabled="myForm.$invalid">Create</button>
+            <button ng-click="save()" class="btn btn-primary pull-right" ng-disabled="isClean() || myForm.$invalid">Save</button>
             <span class="pull-right">&nbsp&nbsp</span>
             <button ng-click="reset()" class="btn btn-danger pull-right"> Reset</button>
             <span class="pull-right">&nbsp&nbsp</span>

@@ -11,8 +11,8 @@ app.
             when('/',{templateUrl:dorm.viewpath+'Status.html'}).
             when('/System/Property',{templateUrl:dorm.viewpath+'System/Property.html'}).
             when('/StudentsManage',{controller: StudentManageCtrl, templateUrl: dorm.viewpath+'StudentManage.html'}).
-            when('/StudentsManage/Edit/:studentId',{controller: StudentManageEditCtrl, templateUrl: dorm.viewpath+'StudentManageEdit.html'}).
-            when('/StudentsManage/Add',{controller: StudentManageAddCtrl, templateUrl: dorm.viewpath+'StudentManageAdd.html'}).
+            when('/StudentsManage/Edit/:studentId',{controller: StudentManageEditCtrl, templateUrl: dorm.viewpath+'StudentManageInfo.html'}).
+            when('/StudentsManage/Add',{controller: StudentManageAddCtrl, templateUrl: dorm.viewpath+'StudentManageInfo.html'}).
             otherwise({redirectTo:'/'});
 
     });

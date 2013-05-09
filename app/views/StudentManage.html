@@ -22,7 +22,7 @@
                     <th>性别</th>
                     <th>操作</th>
                 </tr>
-                <tr ng-repeat="item in dataSet">
+                <tr ng-repeat="item in dataSet| filter:search">
                     <td>{{item.name}}</td>
                     <td>{{item.id}}</td>
                     <td>{{item.class}}</td>
@@ -31,9 +31,9 @@
                         <a  href="#StudentsManage/Edit/{{item.id}}">
                             <i class="icon-pencil"></i>
                         </a>&nbsp
-                        <button  ng-click="delete(item.id)">
+                        <a  href=""  ng-click="delete(item.id)">
                             <i class="icon-trash"></i>
-                        </button>
+                        </a>
                     </td>
 
                 </tr>
