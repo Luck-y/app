@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03daf64e-46f2-4fd8-9a29-736a59597761" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/BuildingManage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/RoomManage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers.js" afterPath="$PROJECT_DIR$/app/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/StudentManage.html" afterPath="$PROJECT_DIR$/app/views/StudentManage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/StudentManageAdd.html" afterPath="$PROJECT_DIR$/app/views/StudentManageAdd.html" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +31,7 @@
       <file leaf-file-name="StudentManageAdd.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/StudentManageAdd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="144" selection-start="115" selection-end="234" vertical-scroll-proportion="-1.3571428">
+            <state line="86" column="0" selection-start="4413" selection-end="4413" vertical-scroll-proportion="-58.357143">
               <folding />
             </state>
           </provider>
@@ -34,7 +40,34 @@
       <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.45618558">
+            <state line="81" column="27" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.23506744">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentManage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/StudentManage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="31" selection-start="180" selection-end="180" vertical-scroll-proportion="2.0357144">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomManage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/RoomManage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="50" selection-start="823" selection-end="823" vertical-scroll-proportion="-10.857142">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildingManage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/BuildingManage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="34" selection-start="175" selection-end="175" vertical-scroll-proportion="12.214286">
               <folding />
             </state>
           </provider>
@@ -52,7 +85,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
+            <state line="16" column="11" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryAction.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest/Lib/Action/QueryAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="5" selection-start="742" selection-end="742" vertical-scroll-proportion="-9.035714">
               <folding />
             </state>
           </provider>
@@ -61,49 +103,7 @@
       <file leaf-file-name="StudentManageEdit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/StudentManageEdit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="86" selection-start="3976" selection-end="3988" vertical-scroll-proportion="-8.035714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentsModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/Lib/Model/StudentsModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="-12.214286">
-              <folding>
-                <element signature="e#6#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomsModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/Lib/Model/RoomsModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="23" selection-start="706" selection-end="706" vertical-scroll-proportion="-16.285715">
-              <folding>
-                <element signature="e#6#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingsModel.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/Lib/Model/BuildingsModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="-11.428572">
-              <folding>
-                <element signature="e#6#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryAction.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest/Lib/Action/QueryAction.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="-8.035714">
+            <state line="82" column="77" selection-start="4152" selection-end="4152" vertical-scroll-proportion="-9.392858">
               <folding />
             </state>
           </provider>
@@ -125,11 +125,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/StudentsManageEdit.html" />
-        <option value="$PROJECT_DIR$/index_dev.html" />
         <option value="$PROJECT_DIR$/app/views/StudentManageEdit.html" />
         <option value="$PROJECT_DIR$/app/services.js" />
-        <option value="$PROJECT_DIR$/app/views/StudentManage.html" />
         <option value="$PROJECT_DIR$/rest/Lib/Model/AccommadationsModel.class.php" />
         <option value="$PROJECT_DIR$/rest/Lib/Action/BuildingsAction.class.php" />
         <option value="$PROJECT_DIR$/rest/Lib/Action/QueryAction.class.php" />
@@ -137,9 +134,12 @@
         <option value="$PROJECT_DIR$/rest/Lib/Model/StudentsModel.class.php" />
         <option value="$PROJECT_DIR$/rest/Lib/Model/BuildingsModel.class.php" />
         <option value="$PROJECT_DIR$/rest/Lib/Model/RoomsModel.class.php" />
-        <option value="$PROJECT_DIR$/app/views/StudentManageAdd.html" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/views/StudentManageInfo.html" />
+        <option value="$PROJECT_DIR$/app/views/BuildingManage.html" />
+        <option value="$PROJECT_DIR$/app/views/StudentManageAdd.html" />
+        <option value="$PROJECT_DIR$/app/views/StudentManage.html" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/views/RoomManage.html" />
         <option value="$PROJECT_DIR$/app/controllers.js" />
       </list>
     </option>
@@ -156,7 +156,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -417,7 +417,11 @@
       <created>1368119373732</created>
       <updated>1368119373732</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update at 5/10">
+      <created>1368119633425</created>
+      <updated>1368119633425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -445,11 +449,11 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286219" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23144877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23144877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18174846" sideWeight="0.76855123" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16564417" sideWeight="0.76855123" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -522,48 +526,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index_dev.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="49" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/Lib/Model/AccommadationsModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="-5.428571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest/Lib/Action/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-4.071429">
-          <folding>
-            <marker date="1367422394552" expanded="true" signature="128:154" placeholder="{...}" />
-            <marker date="1367422394552" expanded="true" signature="158:179" placeholder="{...}" />
-            <marker date="1367422394552" expanded="true" signature="184:238" placeholder="{...}" />
-            <marker date="1367422394552" expanded="true" signature="241:304" placeholder="{...}" />
-            <marker date="1367422394552" expanded="true" signature="306:345" placeholder="{...}" />
-            <marker date="1367422394552" expanded="false" signature="365:384" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/StudentManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-21.035715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest/Lib/Action/InfoAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="217" column="9" selection-start="5633" selection-end="5633" vertical-scroll-proportion="-8.035714">
@@ -598,37 +560,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest/Lib/Action/QueryAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="-8.035714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/StudentManageEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="86" selection-start="3976" selection-end="3988" vertical-scroll-proportion="-8.035714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="979" column="0" selection-start="14621" selection-end="14621" vertical-scroll-proportion="-1.4238921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/StudentManageAdd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="144" selection-start="115" selection-end="234" vertical-scroll-proportion="-1.3571428">
           <folding />
         </state>
       </provider>
@@ -640,9 +574,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/StudentManageEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="77" selection-start="4152" selection-end="4152" vertical-scroll-proportion="-9.392858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="16" selection-start="1558" selection-end="1558" vertical-scroll-proportion="-1.4704684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/BuildingManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="175" selection-end="175" vertical-scroll-proportion="12.214286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest/Lib/Action/QueryAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="742" selection-end="742" vertical-scroll-proportion="-9.035714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/StudentManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="180" selection-end="180" vertical-scroll-proportion="2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/StudentManageAdd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="4413" selection-end="4413" vertical-scroll-proportion="-58.357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/RoomManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="823" selection-end="823" vertical-scroll-proportion="-10.857142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="23" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.45618558">
+        <state line="81" column="27" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.23506744">
           <folding />
         </state>
       </provider>

@@ -1,34 +1,34 @@
 <div class="container">
-    <h6>学生信息</h6>
+    <h6>寝室信息</h6>
     <div class="span9">
         <p>
-            <div class="row">
-                <div class="pull-right">
-                    <a href="#/StudentManage/Add" class="btn btn-info">Create</a>
-                </div>
-                <div class="pull-right">
-                    <input class="search-query input-medium" type="text" placeholder="Search" ng-model="search">
-                </div>
+        <div class="row">
+            <div class="pull-right">
+                <a href="#RoomManage/Add" class="btn btn-info">Create</a>
             </div>
+            <div class="pull-right">
+                <input class="search-query input-medium" type="text" placeholder="Search" ng-model="search">
+            </div>
+        </div>
         </p>
 
 
         <div>
             <table class="table table-hover table-striped">
                 <tr>
-                    <th>姓名</th>
-                    <th>学号</th>
-                    <th>班级</th>
-                    <th>性别</th>
+                    <th>楼栋</th>
+                    <th>寝室号</th>
+                    <th>朝向</th>
+                    <th>寝室电话</th>
                     <th>操作</th>
                 </tr>
                 <tr ng-repeat="item in dataSet| filter:search">
+                    <td>{{obtainBuilding(item.bid)}}</td>
                     <td>{{item.name}}</td>
-                    <td>{{item.id}}</td>
-                    <td>{{item.class}}</td>
-                    <td>{{item.gender}}</td>
+                    <td>{{item.orientation}}</td>
+                    <td>{{item.phonenumber}}</td>
                     <td>
-                        <a  href="#/StudentManage/Edit/{{item.id}}">
+                        <a  href="#RoomManage/Edit/{{item.id}}">
                             <i class="icon-pencil"></i>
                         </a>&nbsp
                         <a  href=""  ng-click="delete(item.id)">
